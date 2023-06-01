@@ -49,7 +49,6 @@ public class ReadFilesInFolder implements IReadFilesInFolder{
     @Override
     public List<Path> filesToRead() throws IOException {
         this.readFilesInFolder(csvFolder);
-        files.forEach(System.out::println);
         return this.files;
     }
 
